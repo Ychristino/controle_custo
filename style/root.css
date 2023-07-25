@@ -1,0 +1,44 @@
+:root{
+    --background-color: rgb(255, 255, 255);
+    --primary-color: rgb(178, 243, 152);
+    --secondary-color: rgb(188, 235, 243);
+
+    --title-color: rgb(0,0,0);
+    --title-font: arial;
+    --title-size: 3rem;
+
+    --subtitle-color: rgb(0,0,0);
+    --subtitle-font: arial;
+    --subtitle-size: 3rem;
+
+    --paragraph-color: rgb(0,0,0);
+    --paragraph-font: arial;
+    --paragraph-size: 3rem;
+
+    --input-text-color: rgb(0,0,0);
+    --input-text-font: 'Courier New', Courier, monospace;
+    --input-text-size: 1.5rem;
+
+    --label-color: rgb(0,0,0);
+    --label-font: 'Courier New', Courier, monospace;
+    --label-size: 1.5rem;
+
+    --legend-color: rgb(0,0,0);
+    --legend-font: 'Courier New', Courier, monospace;
+    --legend-size: 1.5rem;
+
+    --success: rgb(0,0,0);
+    --danger: rgb(0,0,0);
+    --warning: rgb(0,0,0);
+    --alert: rgb(0,0,0);
+    --info: rgb(0,0,0);
+
+    --confirm: rgb(0,255,0);
+    --cancel: rgb(255,0,0);
+    --delete: rgb(0,0,0);
+    --edit: rgb(0,0,0);
+
+    --icon-size: 1rem;
+    --icon-position: center;
+    --icon-repeat: no-repeat;
+}

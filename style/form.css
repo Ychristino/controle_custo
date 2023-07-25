@@ -1,0 +1,64 @@
+@import '../style/root.css';
+
+body{
+    background-color: var(--background-color);
+}
+
+fieldset{
+    background-color: var(--secondary-color);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+    margin: 1rem;
+    padding: 1rem;
+}
+legend{
+    font-family: var(--legend-font);
+    font-size: var(--legend-size);
+}
+
+label{
+    font-family: var(--label-font);
+    font-size: var(--label-size);
+}
+
+
+input{
+    background-color: var(--primary-color);
+    
+    font-family: var(--input-text-font);
+    font-size: var(--input-text-size);
+    width: 30rem;
+    height: 1rem;
+
+    padding: 1rem;
+    margin: 1rem;
+}
+
+select{
+    background-color: var(--primary-color);
+    
+    font-family: var(--input-text-font);
+    font-size: var(--input-text-size);
+    width: 32.5rem;
+    height: 5rem;
+
+    padding: 1rem;
+    margin: 1rem;
+}
+
+input[type='button'], button{
+    background-color: var(--primary-color);
+    
+    font-family: var(--input-text-font);
+    font-size: var(--input-text-size);
+    
+    width: 20rem;
+    height: 5rem;
+
+    padding: 1rem;
+    margin: 1rem;
+}

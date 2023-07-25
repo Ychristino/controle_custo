@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/form.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Cadastro de Obra</title>
+</head>
+<body>
+    
+    <form action="" method="post">
+
+        <fieldset name="localizacao" id="localizacao">
+            <legend>Localização</legend>
+            
+            <label for="logradouro">Logradouro
+                <input type="text"   name="logradouro"  id="logradouro"  placeholder="Ex:. Rua dos bobos">
+            </label>
+            
+            <label for="numero">N°
+                <input type="text"   name="numero"      id="numero"      placeholder="Ex:. 0">
+            </label>
+            
+            <label for="complemento">Complemento
+                <input type="text"   name="complemento" id="complemento" placeholder="Ex:. A casa sem parede">
+            </label>
+            
+            <label for="bairro">Bairro
+                <input type="text"   name="bairro"      id="bairro"      placeholder="Ex:. Vila do Alecrim">
+            </label>
+
+            <label for="cidade">Cidade
+                <input type="text"   name="cidade"      id="cidade"      placeholder="Ex:. Pedras de Brilhante">
+            </label>
+            
+            <label for="estado">Estado
+                <select name="estado" id="estado">
+                </select>
+            </label>
+        
+        </fieldset>
+
+        <fieldset name="etapas" id="etapas">
+            <legend>Etapas</legend>
+
+            <label for="lista_etapas">Etapas
+                <ol name="lista_etapas" id="lista_etapas">
+                    <li name="nova_etapa" id="nova_etapa"> 
+                        <input type="text" name="nome_nova_etapa" id="nome_nova_etapa"> 
+                        <input type="button" id="btm_nova_etapa" value="+ Nova Etapa">
+                    </li>
+                </ol>
+            </label>
+        </fieldset>
+        <button type="submit">Salvar</button>
+        <button type="cancel">Cancelar</button>
+    </form>
+
+    <span class="lista_notificacao">
+        <ul>
+            <li class="notificacao">
+                <span class="titulo">Teste</span>
+                <span class="paragrafo">Mensagem</span>
+            </li>
+        </ul>
+    </span>
+
+
+    <script src="./scripts/set_initials.js"></script>
+    <script src="./scripts/actions.js"></script>
+</body>
+</html>
+

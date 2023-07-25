@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/form.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Cadastro de Gasto</title>
+</head>
+<body>
+    
+    <form action="" method="post">
+        
+        <fieldset name="identificacao" id="identificacao">
+            <legend>Identificação</legend>
+            
+            <label for="classificacao">Classificacao
+                <select name="classificacao" id="classificacao">
+                </select>
+            </label>
+
+            <label for="obra">Obra
+                <select name="obra"  id="obra">
+                </select>
+            </label>
+            
+
+        </fieldset>
+
+        <fieldset name="dados_compra" id="dados_compra">
+            <legend>Descrição</legend>
+
+            <!-- Nome da Pessoa/Taxa/Material -->
+            <label for="nome">Nome
+                <input type="text"   name="nome"        id="nome"        placeholder="Ex:. Nome do produto ou pessoa">
+            </label>
+
+            <label for="descricao">Descrição
+                <input type="text"   name="descricao"   id="descricao"   placeholder="Ex:. Descrição da compra">
+            </label>
+
+            <label for="valor">Valor
+                <input type="text"   name="valor"       id="valor"       placeholder="R$ 0,00" class="valor_monetario">
+            </label>
+        </fieldset>
+        <button type="submit">Salvar</button>
+        <button type="cancel">Cancelar</button>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.2.6/jquery.inputmask.bundle.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js" type="text/javascript"></script>
+    <script src="./scripts/set_initials.js"></script>
+    <script src="../scripts/masks.js"></script>
+</body>
+</html>
