@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
 :root{
     --background-color: rgb(255, 255, 255);
     --primary-color: rgb(178, 243, 152);
@@ -5,19 +7,20 @@
 
     --title-color: rgb(0,0,0);
     --title-font: arial;
-    --title-size: 3rem;
+    --title-size: 2rem;
 
     --subtitle-color: rgb(0,0,0);
     --subtitle-font: arial;
-    --subtitle-size: 3rem;
+    --subtitle-size: 1.5rem;
 
     --paragraph-color: rgb(0,0,0);
     --paragraph-font: arial;
-    --paragraph-size: 3rem;
+    --paragraph-size: 1rem;
 
     --input-text-color: rgb(0,0,0);
-    --input-text-font: 'Courier New', Courier, monospace;
+    --input-text-font: 'Nanum Pen Script', cursive;;
     --input-text-size: 1.5rem;
+    --input-color: rgba(0, 0, 0, 0.2);
 
     --label-color: rgb(0,0,0);
     --label-font: 'Courier New', Courier, monospace;
@@ -25,13 +28,13 @@
 
     --legend-color: rgb(0,0,0);
     --legend-font: 'Courier New', Courier, monospace;
-    --legend-size: 1.5rem;
+    --legend-size: 3rem;
 
     --success: rgb(0,0,0);
     --danger: rgb(0,0,0);
     --warning: rgb(0,0,0);
     --alert: rgb(0,0,0);
-    --info: rgb(0,0,0);
+    --info: rgb(131, 217, 223);
 
     --confirm: rgb(0,255,0);
     --cancel: rgb(255,0,0);

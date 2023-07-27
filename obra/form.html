@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/form.css">
-    <link rel="stylesheet" href="./style/style.css">
     <title>Cadastro de Obra</title>
 </head>
 <body>
@@ -54,22 +53,31 @@
                 </ol>
             </label>
         </fieldset>
-        <button type="submit">Salvar</button>
-        <button type="cancel">Cancelar</button>
+
+        <div id="steps"></div>
+
+        <div style="overflow:auto;">
+            <div style="float:right;">
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Anterior</button>
+                <button type="button" id="nextBtn" onclick="nextPrev(1)">Próximo</button>
+            </div>
+        </div>
+        
     </form>
 
-    <span class="lista_notificacao">
+    <!-- <span class="lista_notificacao">
         <ul>
             <li class="notificacao">
                 <span class="titulo">Teste</span>
                 <span class="paragrafo">Mensagem</span>
             </li>
         </ul>
-    </span>
+    </span> -->
 
 
     <script src="./scripts/set_initials.js"></script>
     <script src="./scripts/actions.js"></script>
+    <script src="../scripts/steps.js"></script>
 </body>
 </html>
 

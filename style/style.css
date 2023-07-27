@@ -1,5 +1,31 @@
 @import '../style/root.css';
 
+input, select{
+    background-color: var(--primary-color);
+    
+    font-family: var(--input-text-font);
+    font-size: var(--input-text-size);
+    width: 30rem;
+    height: 1rem;
+
+    padding: 1rem;
+    margin: 1rem;
+}
+
+button[type='submit']{
+    background-color: var(--confirm);
+    cursor: pointer;
+}
+button[type='cancel']{
+    background-color: var(--cancel);
+    cursor: pointer;
+}
+
+label{
+    font-family: var(--label-font);
+    font-size: var(--label-size);
+}
+
 .primary-color{
     background-color: var(--primary-color);
 }
@@ -76,54 +102,14 @@ p, .paragrafo{
     right: 1rem;
 
 }
-.notificacao{
-    background-color: red;
 
+.notificacao{
+    background-color: rgba(200, 100, 100, 0.7);
     list-style-type: none;
     
+    border-radius: 1rem;
+    border-style: none;
     padding: 1rem;
     width: 23rem;
-    min-height: 9rem;
-}
-
-input{
-    background-color: var(--primary-color);
-    
-    font-family: var(--input-text-font);
-    font-size: var(--input-text-size);
-    width: 30rem;
-    height: 1rem;
-
-    padding: 1rem;
-    margin: 1rem;
-}
-
-select{
-    background-color: var(--primary-color);
-    
-    font-family: var(--input-text-font);
-    font-size: var(--input-text-size);
-    width: 32.5rem;
-    height: 5rem;
-
-    padding: 1rem;
-    margin: 1rem;
-}
-button[type='submit']{
-    background-color: var(--confirm);
-    cursor: pointer;
-}
-button[type='cancel']{
-    background-color: var(--cancel);
-    cursor: pointer;
-}
-
-legend{
-    font-family: var(--legend-font);
-    font-size: var(--legend-size);
-}
-
-label{
-    font-family: var(--label-font);
-    font-size: var(--label-size);
+    min-height: 3rem;
 }
