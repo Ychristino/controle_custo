@@ -57,5 +57,6 @@ for (let key in estados_json){
 for (let key in etapas_json){
     let item = document.createElement('li');
     item.innerText = etapas_json[key];
+    item.className = 'etapa';
     lista_etapas.insertAdjacentElement('afterbegin', item);
 }

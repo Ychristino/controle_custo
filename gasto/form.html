@@ -5,46 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/form.css">
+    <link rel="stylesheet" href="./style/icons.css">
+    <link rel="stylesheet" href="./style/fields.css">
     <title>Cadastro de Gasto</title>
 </head>
 <body>
     
     <form action="" method="post">
-        
+        <step_list>
+            <step class="icone classificacao"></step>
+            <step class="icone dados_compra"></step>
+        </step_list>
+
         <fieldset name="identificacao" id="identificacao">
             <legend>Identificação</legend>
             
-            <label for="classificacao">Classificacao
-                <select name="classificacao" id="classificacao">
-                </select>
-            </label>
+            <label for="classificacao">Classificacao</label>
+            <select name="classificacao" id="classificacao">
+            </select>
 
-            <label for="obra">Obra
-                <select name="obra"  id="obra">
-                </select>
-            </label>
-            
-
+            <label for="obra">Obra</label>
+            <select name="obra"  id="obra">
+            </select>
         </fieldset>
 
         <fieldset name="dados_compra" id="dados_compra">
             <legend>Descrição</legend>
 
             <!-- Nome da Pessoa/Taxa/Material -->
-            <label for="nome">Nome
-                <input type="text"   name="nome"        id="nome"        placeholder="Ex:. Nome do produto ou pessoa">
-            </label>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Ex:. Nome do produto ou pessoa">
 
-            <label for="descricao">Descrição
-                <input type="text"   name="descricao"   id="descricao"   placeholder="Ex:. Descrição da compra">
-            </label>
+            <label for="descricao">Descrição</label>
+            <input type="text" name="descricao" id="descricao" placeholder="Ex:. Descrição da compra">
 
-            <label for="valor">Valor
-                <input type="text"   name="valor"       id="valor"       placeholder="R$ 0,00" class="valor_monetario">
-            </label>
+            <label for="valor">Valor</label>
+            <input type="text" name="valor" id="valor" placeholder="R$ 0,00" class="valor_monetario">
         </fieldset>
-
-        <div id="steps"></div>
 
         <div style="overflow:auto;">
             <div style="float:right;">

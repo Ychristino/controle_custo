@@ -6,6 +6,7 @@ btm_nova_etapa.addEventListener('click', ()=>{
 
     let nova_etapa = document.createElement('li');
     nova_etapa.innerText = input_nova_etapa.value;
+    nova_etapa.className = 'etapa';
     input_nova_etapa.value = "";
     field_nova_etapa.insertAdjacentElement('beforebegin', nova_etapa);
 })

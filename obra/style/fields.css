@@ -1,0 +1,44 @@
+@import '../../style/root.css';
+
+#lista_etapas{
+    width: 100%;
+    padding: 1rem;
+}
+.etapa{
+    line-height: 2rem;
+    height: 2rem;
+    width: 100%;
+}
+#nova_etapa{
+    height: 2rem;
+    display: flex;
+    width: 30%;
+}
+#nome_nova_etapa{
+    padding: 0;
+    margin: 0;
+
+    font-family: var(--input-text-font);
+    font-size: var(--input-text-size);
+    
+    background-color: transparent;
+
+    border-bottom: 2px solid;   
+    flex: 3;
+
+    height: 100%;
+    width: 30rem;
+
+}
+#btm_nova_etapa{
+    padding: 0;
+    margin: 0;
+    
+    text-align: left;
+
+    flex: 1;
+
+    height: 100%;
+
+    cursor: pointer;
+}

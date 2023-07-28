@@ -3,7 +3,7 @@
 :root{
     --background-color: rgb(255, 255, 255);
     --primary-color: rgb(178, 243, 152);
-    --secondary-color: rgb(188, 235, 243);
+    --secondary-color: rgba(0, 0, 0, 0.226);
 
     --title-color: rgb(0,0,0);
     --title-font: arial;
@@ -18,7 +18,7 @@
     --paragraph-size: 1rem;
 
     --input-text-color: rgb(0,0,0);
-    --input-text-font: 'Nanum Pen Script', cursive;;
+    --input-text-font: 'Nanum Pen Script', cursive;
     --input-text-size: 1.5rem;
     --input-color: rgba(0, 0, 0, 0.2);
 
@@ -41,7 +41,7 @@
     --delete: rgb(0,0,0);
     --edit: rgb(0,0,0);
 
-    --icon-size: 1rem;
+    --icon-size: 32px;
     --icon-position: center;
     --icon-repeat: no-repeat;
 }

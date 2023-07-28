@@ -5,56 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/form.css">
+    <link rel="stylesheet" href="./style/icons.css">
+    <link rel="stylesheet" href="./style/fields.css">
     <title>Cadastro de Obra</title>
 </head>
 <body>
     
     <form action="" method="post">
+        <step_list>
+            <step class="icone local"></step>
+            <step class="icone etapas"></step>
+        </step_list>
 
-        <fieldset name="localizacao" id="localizacao">
+        <fieldset name="localizacao" id="localizacao" icon="localizacao_ico">
             <legend>Localização</legend>
             
-            <label for="logradouro">Logradouro
-                <input type="text"   name="logradouro"  id="logradouro"  placeholder="Ex:. Rua dos bobos">
-            </label>
+            <label for="logradouro">Logradouro</label>
+            <input type="text"   name="logradouro"  id="logradouro"  placeholder="Ex:. Rua dos bobos">
             
-            <label for="numero">N°
-                <input type="text"   name="numero"      id="numero"      placeholder="Ex:. 0">
-            </label>
+            <label for="numero">N°</label>
+            <input type="text"   name="numero"      id="numero"      placeholder="Ex:. 0">
             
-            <label for="complemento">Complemento
-                <input type="text"   name="complemento" id="complemento" placeholder="Ex:. A casa sem parede">
-            </label>
+            <label for="complemento">Complemento</label>
+            <input type="text"   name="complemento" id="complemento" placeholder="Ex:. A casa sem parede">
             
-            <label for="bairro">Bairro
-                <input type="text"   name="bairro"      id="bairro"      placeholder="Ex:. Vila do Alecrim">
-            </label>
+            <label for="bairro">Bairro</label>
+            <input type="text"   name="bairro"      id="bairro"      placeholder="Ex:. Vila do Alecrim">
 
-            <label for="cidade">Cidade
-                <input type="text"   name="cidade"      id="cidade"      placeholder="Ex:. Pedras de Brilhante">
-            </label>
+            <label for="cidade">Cidade</label>
+            <input type="text"   name="cidade"      id="cidade"      placeholder="Ex:. Pedras de Brilhante">
             
-            <label for="estado">Estado
-                <select name="estado" id="estado">
-                </select>
-            </label>
+            <label for="estado">Estado</label>
+            <select name="estado" id="estado">
+            </select>
         
         </fieldset>
 
-        <fieldset name="etapas" id="etapas">
+        <fieldset name="etapas" id="etapas" icon="etapas_ico">
             <legend>Etapas</legend>
 
-            <label for="lista_etapas">Etapas
-                <ol name="lista_etapas" id="lista_etapas">
-                    <li name="nova_etapa" id="nova_etapa"> 
-                        <input type="text" name="nome_nova_etapa" id="nome_nova_etapa"> 
-                        <input type="button" id="btm_nova_etapa" value="+ Nova Etapa">
-                    </li>
-                </ol>
-            </label>
+            <label for="lista_etapas">Etapas</label>
+            <ol name="lista_etapas" id="lista_etapas">
+                <li name="nova_etapa" id="nova_etapa">
+                    <input type="text" name="nome_nova_etapa" id="nome_nova_etapa" placeholder="Adicionar nova Etapa"> 
+                    <input type="button" id="btm_nova_etapa" value="ADD">
+                </li>
+            </ol>
         </fieldset>
-
-        <div id="steps"></div>
 
         <div style="overflow:auto;">
             <div style="float:right;">

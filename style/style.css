@@ -90,6 +90,9 @@ p, .paragrafo{
     background-repeat: var(--icon-repeat);
     background-position: var(--icon-position);
     background-size: var(--icon-size);
+    padding: 16px;
+    width:  32px;
+    height: 32px;
 }
 
 .lista_notificacao{
