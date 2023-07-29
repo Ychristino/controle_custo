@@ -1,16 +1,21 @@
+const btm_prev = document.getElementById('prevBtn')
+const btm_next = document.getElementById('nextBtn')
 let currentTab = 0;
 
 showTab(currentTab);
+
+btm_prev.addEventListener('click', ()=> nextTab(-1))
+btm_next.addEventListener('click', ()=> nextTab(1))
 
 function showTab(n) {
     let x = document.getElementsByTagName("fieldset");
     x[n].style.display = "block";
 
     if (n == 0) {
-        document.getElementById("prevBtn").style.display = "none";
+        document.getElementById("prevBtn").style.visibility = "hidden";
     } 
     else {
-        document.getElementById("prevBtn").style.display = "inline";
+        document.getElementById("prevBtn").style.visibility = "";
     }
     if (n == (x.length - 1)) {
         document.getElementById("nextBtn").innerHTML = "Salvar";
@@ -21,14 +26,14 @@ function showTab(n) {
   fixStepIndicator(n)
 }
 
-function nextPrev(n) {
+function nextTab(n) {
     let x = document.getElementsByTagName("fieldset");
     
     x[currentTab].style.display = "none";
     
     currentTab = currentTab + n;
     if (currentTab >= x.length) {
-        // document.getElementByTagName("Form").submit();
+        document.getElementsByTagName("Form")[0].submit();
         // return false;
     }
     
