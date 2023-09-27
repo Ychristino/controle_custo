@@ -1,7 +1,6 @@
 function validate_form(){
     const classificacao = document.getElementById('classificacao').value
     const obra = document.getElementById('obra').value
-    const dados_compra = document.getElementById('dados_compra').value
     const nome = document.getElementById('nome').value
     const descricao = document.getElementById('descricao').value
     const valor = document.getElementById('valor').value
@@ -10,8 +9,8 @@ function validate_form(){
     if (!classificacao)
     throw new Error('Uma classificação deve ser selecionado!');
 
-    if (!obra)
-    throw new Error('Uma obra deve ser selecionada!');
+    // if (!obra)
+    // throw new Error('Uma obra deve ser selecionada!');
 
     if (!dados_compra)
     throw new Error('O Campo Dados de Compra deve ser informado!');
@@ -28,7 +27,6 @@ function validate_form(){
 function send_form(){
     const classificacao = document.getElementById('classificacao').value
     const obra = document.getElementById('obra').value
-    const dados_compra = document.getElementById('dados_compra').value
     const nome = document.getElementById('nome').value
     const descricao = document.getElementById('descricao').value
     const valor = document.getElementById('valor').value
@@ -36,7 +34,6 @@ function send_form(){
     let new_data = {
         'classificacao':classificacao,
         'obra':obra,
-        'dados_compra':dados_compra,
         'nome':nome,
         'descricao':descricao,
         'valor':valor
