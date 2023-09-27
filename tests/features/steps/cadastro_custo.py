@@ -11,7 +11,7 @@ driver = webdriver.Chrome()
 def step_impl(context):
     print('Acessando a tela de cadastro de custo')
     
-    html_page = Path.cwd() / '../index.html'
+    html_page = Path.cwd() / 'index.html'
     driver.get(html_page.as_uri())
 
     menu = driver.find_element(By.ID, 'novo_gasto')
