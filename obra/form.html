@@ -11,10 +11,10 @@
 </head>
 <body>
     
-    <form action="./teste/" method="post">
+    <form method="post" onsubmit="send_form()" action="../index.html">
         <step_list>
             <step class="icone local"></step>
-            <step class="icone etapas"></step>
+            <!-- <step class="icone etapas"></step> -->
         </step_list>
 
         <fieldset name="localizacao" id="localizacao" icon="localizacao_ico">
@@ -41,7 +41,7 @@
         
         </fieldset>
 
-        <fieldset name="etapas" id="etapas" icon="etapas_ico">
+        <!-- <fieldset name="etapas" id="etapas" icon="etapas_ico">
             <legend>Etapas</legend>
 
             <label for="lista_etapas">Etapas</label>
@@ -51,7 +51,7 @@
                     <input type="button" id="btm_nova_etapa" value="ADD">
                 </li>
             </ol>
-        </fieldset>
+        </fieldset> -->
 
         <div class="button_list">
             <button type="button" id="prevBtn">Anterior</button>

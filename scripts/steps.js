@@ -29,15 +29,22 @@ function showTab(n) {
 function nextTab(n) {
     let x = document.getElementsByTagName("fieldset");
     
-    x[currentTab].style.display = "none";
-    
-    currentTab = currentTab + n;
-    if (currentTab >= x.length) {
-        document.getElementsByTagName("Form")[0].submit();
-        // return false;
+    if (currentTab + n >= x.length) {
+        try{
+            validate_form()
+            send_form()
+            document.getElementsByTagName("Form")[0].submit();
+        }
+        catch (err){
+            cria_notificacao('Algo deu errado...', err.message)
+        }
     }
-    
-    showTab(currentTab);
+    else{
+        x[currentTab].style.display = "none";
+        
+        currentTab = currentTab + n;
+        showTab(currentTab);
+    }
 }
 
 function fixStepIndicator(n) {

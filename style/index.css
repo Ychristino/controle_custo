@@ -41,3 +41,46 @@ input, select{
     padding: 5px;
     margin: 1rem;
 }
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+item{
+    flex: 40%;
+    margin: 0.5rem;
+    border: 3px;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    width: 25%;
+    background-color:transparent;
+    padding: 1rem;
+    text-align: center;
+}
+input[type='button'].icone{
+    background-position: left;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.25s;
+}
+input[type='button'].icone:hover{
+    opacity: 60%;
+    transform: scale(1.04);
+}
+.nova-obra{
+    background-image: url('../icons/index/nova_obra.png');
+}
+
+.lista-obra{
+    background-image: url('../icons/index/lista_obra.png');
+}
+
+.novo-gasto{
+    background-image: url('../icons/index/novo_gasto.png');
+}
+
+.lista-gasto{
+    background-image: url('../icons/index/lista_gasto.png');
+}

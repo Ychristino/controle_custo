@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
 
 :root{
-    --background-color: rgb(255, 255, 255);
-    --primary-color: rgb(178, 243, 152);
-    --secondary-color: rgba(0, 0, 0, 0.226);
+    --background-color: transparent;
+    --primary-color: #a2ccce;
+    --secondary-color: #009199;
 
     --title-color: rgb(0,0,0);
-    --title-font: arial;
+    --title-font: 'Nanum Pen Script', cursive;;
     --title-size: 2rem;
 
     --subtitle-color: rgb(0,0,0);
-    --subtitle-font: arial;
+    --subtitle-font: 'Nanum Pen Script', cursive;;
     --subtitle-size: 1.5rem;
 
     --paragraph-color: rgb(0,0,0);
-    --paragraph-font: arial;
-    --paragraph-size: 1rem;
+    --paragraph-font: 'Nanum Pen Script', cursive;;
+    --paragraph-size: 1.5rem;
 
     --input-text-color: rgb(0,0,0);
     --input-text-font: 'Nanum Pen Script', cursive;
@@ -40,6 +40,7 @@
     --cancel: rgb(255,0,0);
     --delete: rgb(0,0,0);
     --edit: rgb(0,0,0);
+    --invalid:rgb(255,0,0); 
 
     --icon-size: 32px;
     --icon-position: center;

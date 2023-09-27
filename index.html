@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/form.css">
-    <link rel="stylesheet" href="./style/index.css">
-    <title>Login</title>
-</head>
-<body>
-    <form action="" method="post">
-
-        <fieldset name="identificacao" id="identificacao">
-            
-            <label for="usuario">Usuario</label>
-            <input type="email" name="usuario" id="usuario" placeholder="email@email.com">
-
-            <label for="senha">senha</label>
-            <input type="password" name="senha" id="senha" placeholder="senha">
-
-            <button type="submit">Login</button>
-        </fieldset>
-
-    </form>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/form.css">
+        <link rel="stylesheet" href="./style/index.css">
+        <title>Painel</title>
+    </head>
+    <body>
+        <div class="menu">
+            <item>
+                <a href="./obra/form.html">
+                    <input type="button" class="icone nova-obra" value="Nova Obra">
+                </a>
+            </item>
+            <item>
+                <a href="./gasto/form.html">
+                    <input type="button" class="icone novo-gasto" value="Novo Gasto">
+                </a>        
+            </item>
+            <item>
+                <a href="./obra/list.html">
+                    <input type="button" class="icone lista-obra" value="Lista Obra">
+                </a>
+            </item>
+            <item>
+                <a href="./gasto/list.html">
+                    <input type="button" class="icone lista-gasto" value="Lista Gastos">
+                </a>
+            </item>
+        </div>
+    </body>
 </html>
