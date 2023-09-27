@@ -1,3 +1,6 @@
+name: Valida Pushs
+run-name: ${{ github.actor }} is testing out application
+on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
