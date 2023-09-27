@@ -17,4 +17,4 @@ jobs:
     - name: Install Behave
       run: pip install behave      
     - name: Run Test
-      run: python ./tests/runner.py --testdir=features
+      run: python ./tests/runner.py --testdir=./tests/features
