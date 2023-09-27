@@ -1,16 +1,16 @@
-name: Valida Pushs
-run-name: ${{ github.actor }} is testing out application
+name: Validate Application
+run-name: ${{ github.actor }} is testing out the application
 on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # https://github.com/marketplace/actions/setup-chromedriver
-      uses: nanasess/setup-chromedriver@master
-    - name: Start XVFB
+      - uses: actions/checkout@v1
+      - name: Set up Python 3.7
+      - name: Start XVFB
       run: |
         sudo Xvfb -ac :99 -screen 0 1280x1024x24 > /dev/null 2>&1 & # optional, disables headless mode
-    - name: Run tests
-       run: pipenv run python runner.py --testdir=features
+      - name: Run tests
+        run: pipenv run python runner.py --testdir=features
       env:
         DISPLAY: :99
