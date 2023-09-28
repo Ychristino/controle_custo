@@ -13,9 +13,9 @@ def step_impl(context):
     print('Acessando a tela de cadastro de custo')
     
     github_workspace = os.environ.get('GITHUB_WORKSPACE')
-
-    # html_page = Path.cwd() / './index.html'
     html_page = f'{github_workspace}/index.html'
+    
+    html_page = Path.cwd() / '../index.html'
     driver.get(html_page.as_uri())
 
     menu = driver.find_element(By.ID, 'novo_gasto')
